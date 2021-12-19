@@ -3,6 +3,10 @@
 
 /*Общие метки*/
 
+.comment {
+    color: black;
+}
+
 html {
     padding: 0px;
     margin: 0px;
