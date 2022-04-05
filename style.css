@@ -75,7 +75,15 @@ header nav a:last-child {
 
 header nav {
     display: flex;
+		align-items: center;
     justify-content: space-between;
+}
+
+.active {
+	color: white;
+	background-color: black;
+	padding: 15px 30px;
+	border-radius: 20px;
 }
 
 /*Основной контент*/

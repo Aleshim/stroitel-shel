@@ -1,29 +1,25 @@
-/*Шрифты*/
-@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Prosto+One&family=Stalinist+One&display=swap');
-
-
 /*Общие метки*/
 
-.comment {
-    color: black;
+* {
+	box-sizing: border-box;
 }
 
 html {
-    padding: 0px;
-    margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 body  {
-    background-color: #E5E5E5;
-    margin: 0px;
-    font-family: 'Kelly Slab', cursive;
-    color: #ffffff;;
-    position: relative;
+	background-color: rgb(255, 255, 255);
+	margin: 0px;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #6A6969;
+	text-decoration: none;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*Сброс стилей у кнопки.*/
@@ -49,244 +45,206 @@ p {
 
 /*Шапка*/
 
-.logo-header {
-    margin-top: 20px;
-    margin-left: 45px;
-}
-
 header {
-    height: 100px;
-    width: 100%;
-    background-color: #FFFFFF;
-    padding: 0px;
-    margin: 0px;
-    font-size: 1.9em;
-    font-family: 'Prosto One', cursive;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 114px;
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+	font-family: 'Prosto One', cursive;
 }
 
 header nav a {
-    display: inline-block;
-    margin-right: 30px;
+	display: inline-block;
+	margin-right: 86px;
+	font-family: 'Prosto One', cursive;
+	transition-duration: 300ms;
+}
+
+
+header nav a:hover {
+	color: white;
+	background-color: black;
+	padding: 15px 30px;
+	border-radius: 20px;
+}
+
+header nav a:last-child {
+	margin-right: 0px;
 }
 
 header nav {
-    position: absolute;
-    top: 30px;
-    right: 1.5%;
-    width: 770px;
-    height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-header nav button {
-    padding-left: 28px;
-    padding-right: 23px;
-    padding-top: 5px;
-    padding-bottom: 2px;
-    border-radius: 32px;
-    background-color: #CDCBCB;
-    color: #6A6969;
-    margin-top: -5px;
-    display: inline-block;
+.active {
+	color: white;
+	background-color: black;
+	padding: 15px 30px;
+	border-radius: 20px;
 }
 
 /*Основной контент*/
 
 .title {
-    font-family: 'Stalinist One', cursive;
-    font-size: 50px;
-    background-color: #D9D295;
+    font-size: 40px;
+		font-weight: 700;
+    background-color: #000000;
     width: 100%;
-    height: 20%;
     text-align: center;
+		padding: 30px 0;
+		color: #FFFFFF;
 }
 
-.section {
-    margin-left: auto;
-    margin-right: auto;
-    height: 880px;
-    width: 1200px;
+.item {
+	margin: 64px 93px;
+	height: 500px;;
+	min-width: 1000px;
+	height: 500px;
+	position: relative;
 }
 
-.section-1,
-.section-2,
-.section-3,
-.section-4 {
-    width: 550px;
-    height: 340px;
-    border-radius: 3%;
-    display: inline-block;
-    position: relative;
-    transition: all 0.3s;
-    background-color: rgb(10, 114, 83);
-    color: snow;
+.item-title {
+	font-weight: 500;
+	font-size: 36px;
 }
 
-.section-1:hover,
-.section-2:hover,
-.section-3:hover,
-.section-4:hover {
-    box-shadow: 0px 0px 35px 10px rgb(0, 0, 0);
-    background-color: rgba(10, 114, 83, 0.479);
+.item .container {
+	display: flex;
+	justify-content: space-between;
 }
 
-.section-1 {  
-    left: 0px;
-    float: left;
-    margin-top: 50px;
+.item-description {
+	max-width: 515px;
+	margin-top: 50px;
+	font-weight: 400;
 }
 
-.section-2 {
-    right: 0px;
-    float: right;
-    margin-top: 50px;
+.item-slider {
+	margin-left: 20px;
+	min-width: 627px;
+	height: 363px;
+	transform: translateY(-20px);
+	position: relative;
+	border-radius: 21px;
+	border: 5px solid #000000;
+	overflow: hidden;
 }
 
-.section-3 {
-    left: 0px;
-    float: left;
-    margin-top: 80px;
+.item-slider input[type="radio"] {
+	display: none;
 }
 
-.section-4 {
-    right: 0px;
-    float: right;
-    margin-top: 80px;
-    background-size: cover;
+.item-slider-images {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
 }
 
-.section h2 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 90px;
-    font-size: 45px;
+.item-slider-img {
+	height: 100%;
+	width: 100%;
+	background-image: url("img/background.jpg");
+	margin: 0;
+	padding: 0;
 }
 
-.section-2 h2 {
-    margin-bottom: 45px;
+.item-slider-img:nth-child(2) {
+	transform: translateX(100%) translateY(-100%);
 }
 
-.section p {
-    text-align: center;
-    font-size: 38px;
+.item-slider-img:nth-child(3) {
+	transform: translateX(200%) translateY(-200%);
 }
 
 
-
-/*Подвал*/
-
-footer {
-    height: 100px;
-    width: 100%;
+.item-slider-nav-arrow-left,
+.item-slider-nav-arrow-right {
+	position: absolute;
+	height: 100%;
+	width: 95px;
+	background-color: #FFFFFF;
+	opacity: 0.7;
+	backdrop-filter: blur(8px);
 }
 
-.logo-footer {
-    margin-top: 30px;
-    margin-left: 45px;
+.item-slider-nav-arrow-left {
+	top: 0;
+	left: 0;
 }
 
-footer a:nth-of-type(2) div {
-    color: #6A6969;
-    font-family: 'Roboto', sans-serif;
-    margin-top: -30px;
-    font-size: 20px;
-    width: 190px;
+.item-slider-nav-arrow-right {
+	top: 1px;
+	right: -5px;
 }
 
-footer a:nth-of-type(2) {
-    width: 190px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
+.item-slider-nav-arrows svg {
+	position: absolute;
+	top: 165px;
+	left: 35px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
 }
 
-footer .prava p {
-    float: right;
-    margin-right: 3%;
-    color: #6A6969;
-    font-family: 'Roboto', sans-serif;
-    margin-top: -25px;
-    font-size: 15px;
+.item-slider-nav-arrows svg:hover {
+	opacity: 0.7;
+}
+
+.item-slider-nav-panel {
+	width: 141px;
+	height: 40px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 306px;
+	left: 243px;
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(4px);
+	border-radius: 9px;
+}
+
+.item-slider-nav-panel .container {
+	width: 90px;
+	height: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item-slider-nav-panel label {
+	height: 22px;
+}
+
+.item-slider-nav-panel svg circle {
+	cursor: pointer;
+}
+
+.fill-circle {
+	fill: black;
 }
 
 
-/*media screen*/
-
-/*Перевод зжимания на цент*/
-@media screen and (max-width: 1200px) {
-    .section {
-        width: 100%;
-    }
-
-    .section-1 h2,
-    .section-2 h2,
-    .section-3 h2,
-    .section-4 h2 {
-        font-size: 30px;
-    }
-
-    .section-3 h2 {
-        margin-bottom: 70px;
-    }
-
-    .section-1 p,
-    .section-2 p,
-    .section-3 p,
-    .section-4 p {
-        font-size: 27px;
-        padding-bottom: 5px;
-    }
-
-    .section-1,
-    .section-3 {
-        margin-left: 10px;
-    }
-
-    .section-2,
-    .section-4 {
-        margin-right: 10px;
-    }
-}
-
-/*Уменьшение блоков*/
-@media screen and (max-width: 1120px) {
-    .section  {
-        height: 635px;
-    }
-
-    .section-1,
-    .section-2,
-    .section-3,
-    .section-4 {
-        width: 450px;
-        height: 250px;
-    }
-}
-
-/*Стоп-кран*/
-@media screen and (max-width: 1100px) {
-    body {
-        width: 1100px;
-    }
-}
-
-/*система на растяжение*/
-
-@media screen and (min-width: 1600px) {
-
-    /*система для шапки на растяжении*/
-
-    .header-frame {
-        width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header nav {
-        position: static;
-        margin-top: 30px;
-        margin-right: 30px;
-        float: right;
-        width: 770px;
-        height: 50px;
-    }
+.item-button {
+	width: 277px;
+	height: 65px;
+	border-radius: 10px;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-138.5px);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 18px;
 }
