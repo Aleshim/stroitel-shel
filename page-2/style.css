@@ -108,6 +108,7 @@ header nav {
 	min-width: 1000px;
 	height: 500px;
 	position: relative;
+	margin-bottom: 90px;
 }
 
 .item-title {
@@ -116,6 +117,8 @@ header nav {
 }
 
 .item .container {
+	width: 100%;
+	height: 100px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -127,8 +130,8 @@ header nav {
 }
 
 .item-slider {
-	margin-left: 20px;
-	min-width: 627px;
+	margin-left: 10%;
+	width: 627px;
 	height: 363px;
 	transform: translateY(-20px);
 	position: relative;
@@ -152,6 +155,7 @@ header nav {
 	height: 100%;
 	width: 100%;
 	background-image: url("img/background.jpg");
+	background-position: center;
 	margin: 0;
 	padding: 0;
 }
@@ -205,7 +209,8 @@ header nav {
 	justify-content: center;
 	align-items: center;
 	top: 306px;
-	left: 243px;
+	left: 50%;
+	transform: translateX(-70px);
 	background: rgba(255, 255, 255, 0.7);
 	backdrop-filter: blur(4px);
 	border-radius: 9px;
@@ -227,6 +232,15 @@ header nav {
 	cursor: pointer;
 }
 
+.item-slider-nav-panel .hovered {
+	cursor: pointer;
+	transition: fill 200ms ease;
+}
+
+.item-slider-nav-panel .hovered:hover {
+	fill: black;
+}
+
 .fill-circle {
 	fill: black;
 }
@@ -240,11 +254,32 @@ header nav {
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
-	transform: translateX(-138.5px);
+	transform: translateX(-130px);
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 	color: #FFFFFF;
 	font-size: 24px;
 	font-weight: 700;
 	text-align: center;
 	padding-top: 18px;
+	transition: all 400ms ease-in-out;
+	cursor: pointer;
+}
+
+.item-button:hover {
+	padding-top: 18px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.reverse-flex {
+	flex-direction: row-reverse;
+}
+
+.item-slider__reverse {
+	margin-left: 0;
+	margin-right: 10%;
+}
+
+.item-title__reverse {
+	float: right;
 }
