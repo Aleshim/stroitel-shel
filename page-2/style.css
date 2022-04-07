@@ -233,6 +233,10 @@ header nav {
 	cursor: pointer;
 }
 
+.item-slider-nav-panel .active {
+	fill: black;
+}
+
 .item-slider-nav-panel .hovered {
 	cursor: pointer;
 	transition: fill 200ms ease;
