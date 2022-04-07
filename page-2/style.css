@@ -106,7 +106,7 @@ header nav {
 	margin: 64px 93px;
 	height: 500px;;
 	min-width: 1000px;
-	height: 500px;
+	min-height: 500px;
 	position: relative;
 	margin-bottom: 90px;
 }
@@ -127,6 +127,7 @@ header nav {
 	max-width: 515px;
 	margin-top: 50px;
 	font-weight: 400;
+	height: 70%;
 }
 
 .item-slider {
@@ -265,6 +266,11 @@ header nav {
 	cursor: pointer;
 }
 
+.item-button__adaptive {
+	left: 80%;
+	bottom: 140px;
+}
+
 .item-button:hover {
 	padding-top: 18px;
 	background-color: #FFFFFF;
@@ -282,4 +288,59 @@ header nav {
 
 .item-title__reverse {
 	float: right;
+}
+
+.item-description__reverse {
+	text-align: right;
+}
+
+.item:nth-of-type(2) .item-slider-img {
+	background-image: url("img/background_sport_1.jpg");
+}
+
+.item:nth-of-type(3) .item-slider-img {
+	background-image: url("img/background_foot_1.jpg");
+}
+
+.item:nth-of-type(4) .item-slider-img {
+	background-image: url("img/background_winter_1.jpg");
+}
+
+.item:nth-last-of-type(1) {
+	margin-bottom: 0;
+}
+
+/*Подвал*/
+
+footer {
+	height: 100px;
+	width: 100%;
+}
+
+footer .flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+}
+
+footer a:nth-of-type(2) div {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+footer .prava p {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+
+/*медиа запросы*/
+
+@media screen and (max-width: 1083px) {
+	html {
+	 width: 1238px;
+	}
 }
