@@ -1,70 +1,166 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
-        <title>Стадион Cтроитель/прокат</title>
+        <title>Стадион Строитель/секции</title>
         <link href="style.css" rel="stylesheet">
 
+				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
         <!--Шрифты-->
-        <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Prosto+One&family=Stalinist+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Abril+Fatface&family=Prosto+One&family=Stalinist+One&display=swap" rel="stylesheet">
 
         <meta charset="UTF-8">
-    </head>
+		</head>
 
-    <div class="comment">Сайт загружается.. Подождите немного) Site is loading .. Wait a bit)</div>
+		<body>
+			<!--Шапка-->
+			<header>
+				<img src="../img/logo.svg">
+				<nav>
+						<a href="../index.html">О стадионе</a>
+						<a href="../page-2/index.html">Секции</a>
+						<a href="index.html" class="active">Прокат</a>
+						<a href="../page-4/index.html">Тарифы</a>
+				</nav>
+			</header>
 
-    <!--<body>-->
-        <!--Шапка-->
-        <!--<header>
-            <div class="header-frame">
-                <img src="../img/logo.svg" class="logo-header">
-                <nav>
-                    <a href="../index.html">О стадионе</a>
-                    <a href="../page-2/index.html">Секции</a>
-                    <a href="index.html">Прокат</a>
-                    <button type="button"><a style="margin-right: 0px;" href="../page-4/index.html">Тарифы</a></button>
-                </nav>
-            </div>
-        </header>-->
+			<div class="title">ПРОКАТ</div>
 
-        <!--Основоной контент-->
-        <!--<main>
-            <div class="title">
-                <h1>ПРОКАТ</h1>
-            </div>
+			<main>
+				<div class="item">
+					<div class="item-title">Прокат коньков.</div>
+					<div class="container">
+						<div class="item-description">
+							Катание на коньках является самым красивым, но также одним из самых сложных видов спорта. Рассекать воздух, мчась на коньках – забава, которая заряжает нас позитивом и позволяет чувствовать себя таким быстрым и легким! Пусть перед этим еще не раз придется упасть, отогревать руки, но результат не заставит вас ждать – данное занятие помогает бороться с лишним весом, а также является защитником нашего здоровья.
+						</div>
 
-            <div class="section">
-                <a href="source/page-1/index.html">
-                    <div class="section-1">
-                        <h2>прокат коньков</h2>
-                        <p>
-                            Катание на коньках дарит массу позитивных эмоций и помогает снять психологическое напряжение. Особенно полезно кататься на открытых катках. Небольшой мороз придает бодрости и хорошо тонизирует нервную систему.
-                        </p>
-                    </div>
-                </a>
-                <a href="source/page-2/index.html">
-                    <div class="section-2">
-                        <h2>прокат лыж</h2>
-                        <p>
-                            Лыжи укрепляют здоровье: учащается и становится более глубоким дыхание, кровь лучше насыщается кислородом и доставляет его во все органы и ткани организма. Исчезают признаки кислородного голодания, ускоряются процессы обмена веществ, из организма активно выводятся продукты обмена.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </main>-->
+						<div class="item-slider">
+							<div class="item-slider-nav">
 
-        <!--Подвал-->
-        <!--<footer>
-            <a href="http://stroitel-shel.cf">
-                <img src="../img/logo.svg" class="logo-footer">
-            </a>
-            <a href="http://stroitel-shel.cf">
-                <div>
-                    STROITEL-SHEL.CF
-                </div>
-            </a>
-            <div class="prava">
-                <p>Все права защишены</p>
-            </div>
-        </footer>-->
-    <!--</body>-->
+								<!--arrows-->
+								<div class="item-slider-nav-arrows">
+									<div class="item-slider-nav-arrow-left arrow">
+										<svg width="21" height="36" viewBox="0 0 21 36" fill="none">
+											<path d="M18 3L3 18L18 33" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>	
+									</div>
+									<div class="item-slider-nav-arrow-right arrow">
+										<svg width="21" height="36" viewBox="0 0 21 36" fill="none">
+											<path d="M3 3L18 18L3 33" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>	
+									</div>
+								</div>
+
+								<!--control panel-->
+								<div class="item-slider-nav-panel">
+									<div class="container">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="transparent">
+											<circle class="active" cx="11" cy="11" r="10" stroke="black" stroke-width="2"/>
+											<circle class="hovered" cx="11" cy="11" r="5" fill="transparent"/>
+										</svg>	
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="transparent">
+											<circle cx="11" cy="11" r="10" stroke="black" stroke-width="2"/>
+											<circle class="hovered" cx="11" cy="11" r="5" fill="transparent"/>
+										</svg>
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="transparent">
+											<circle cx="11" cy="11" r="10" stroke="black" stroke-width="2"/>
+											<circle class="hovered" cx="11" cy="11" r="5" fill="transparent"/>
+										</svg>
+									</div>
+								</div>
+
+								<!--content-->
+								<div class="item-slider-images">
+									<div class="item-slider-img"></div>
+									<div class="item-slider-img"></div>
+									<div class="item-slider-img"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-button item-button__adaptive">
+						ЗАПИСАТЬСЯ
+					</div>
+				</div>
+
+				<!--item 2-->
+				<div class="item">
+					<div class="item-title item-title__reverse">Прокат лыж.</div>
+					<div class="container reverse-flex">
+						<div class="item-description item-description__reverse">
+							При катании на лыжах участвуют практически все группы мышц, причем не только крупных, но и второстепенных. Максимальная нагрузка при этом приходится на мышцы нижних конечностей – бедра и голени, чуть менее активно работает мускулатура пресса и спины, а также верхних конечностей. Такая нагрузка на мышцы приводит к повышению их тонуса. Они приобретают привлекательную форму, становятся сильнее. Повышается выносливость спортсмена. Обратите внимание: разные виды лыжного хода воздействуют на разные группы мышц. И, конечно, лыжный спорт не поможет накачать мышцы, но он является отличным средством поддержания их в тонусе.
+						</div>
+
+						<div class="item-slider item-slider__reverse">
+							<div class="item-slider-nav">
+
+								<!--arrows-->
+								<div class="item-slider-nav-arrows">
+									<div class="item-slider-nav-arrow-left arrow">
+										<svg width="21" height="36" viewBox="0 0 21 36" fill="none">
+											<path d="M18 3L3 18L18 33" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>	
+									</div>
+									<div class="item-slider-nav-arrow-right arrow">
+										<svg width="21" height="36" viewBox="0 0 21 36" fill="none">
+											<path d="M3 3L18 18L3 33" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>	
+									</div>
+								</div>
+
+								<!--control panel-->
+								<div class="item-slider-nav-panel">
+									<div class="container">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="transparent">
+											<circle class="active" cx="11" cy="11" r="10" stroke="black" stroke-width="2"/>
+											<circle class="hovered" cx="11" cy="11" r="5" fill="transparent"/>
+										</svg>	
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="transparent">
+											<circle cx="11" cy="11" r="10" stroke="black" stroke-width="2"/>
+											<circle class="hovered" cx="11" cy="11" r="5" fill="transparent"/>
+										</svg>
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="transparent">
+											<circle cx="11" cy="11" r="10" stroke="black" stroke-width="2"/>
+											<circle class="hovered" cx="11" cy="11" r="5" fill="transparent"/>
+										</svg>
+									</div>
+								</div>
+
+								<!--content-->
+								<div class="item-slider-images">
+									<div class="item-slider-img"></div>
+									<div class="item-slider-img"></div>
+									<div class="item-slider-img"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-button">
+						ЗАПИСАТЬСЯ
+					</div>
+				</div>
+
+			</main>
+
+			<!--Подвал-->
+			<footer>
+				<div class="flex">
+						<a href="https://aleshim.github.io/stroitel-shel/">
+								<img src="../img/logo.svg" class="logo-footer">
+						</a>
+						<a href="https://aleshim.github.io/stroitel-shel/">
+								<div>
+										https://aleshim.github.io/stroitel-shel/
+								</div>
+						</a>
+						<div class="prava">
+								<p>Все права защишены</p>
+						</div>
+				</div>
+		</footer>
+		</body>
 </html>
