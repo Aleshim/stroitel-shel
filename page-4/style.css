@@ -1,28 +1,25 @@
-/*Шрифты*/
-@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Prosto+One&family=Stalinist+One&display=swap');
-
 /*Общие метки*/
 
-.comment {
-    color: black;
+* {
+	box-sizing: border-box;
 }
 
 html {
-    padding: 0px;
-    margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 body  {
-    background-color: #E5E5E5;
-    margin: 0px;
-    font-family: 'Kelly Slab', cursive;
-    color: #ffffff;;
-    position: relative;
+	background-color: rgb(255, 255, 255);
+	margin: 0px;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #6A6969;
+	text-decoration: none;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*Сброс стилей у кнопки.*/
@@ -48,209 +45,178 @@ p {
 
 /*Шапка*/
 
-.logo-header {
-    margin-top: 20px;
-    margin-left: 45px;
-}
-
 header {
-    height: 100px;
-    width: 100%;
-    background-color: #FFFFFF;
-    padding: 0px;
-    margin: 0px;
-    font-size: 1.9em;
-    font-family: 'Prosto One', cursive;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 114px;
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+	font-family: 'Prosto One', cursive;
 }
 
 header nav a {
-    display: inline-block;
-    margin-right: 30px;
+	display: inline-block;
+	margin-right: 86px;
+	font-family: 'Prosto One', cursive;
+	transition-duration: 300ms;
+}
+
+
+header nav a:hover {
+	color: white;
+	background-color: black;
+	padding: 15px 30px;
+	border-radius: 20px;
+}
+
+header nav a:last-child {
+	margin-right: 0px;
 }
 
 header nav {
-    position: absolute;
-    top: 30px;
-    right: 1.5%;
-    width: 770px;
-    height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-header nav button {
-    padding-left: 28px;
-    padding-right: 23px;
-    padding-top: 5px;
-    padding-bottom: 2px;
-    border-radius: 32px;
-    background-color: #CDCBCB;
-    color: #6A6969;
-    margin-top: -5px;
-    display: inline-block;
+.active {
+	color: white;
+	background-color: black;
+	padding: 15px 30px;
+	border-radius: 20px;
 }
 
 /*Основной контент*/
 
 .title {
-    font-family: 'Stalinist One', cursive;
-    font-size: 50px;
-    background-color: #424040;
+    font-size: 40px;
+		font-weight: 700;
+    background-color: #000000;
     width: 100%;
-    height: 20%;
     text-align: center;
+		padding: 30px 0;
+		color: #FFFFFF;
 }
 
-.features {
-    padding-top: 60px;
-    text-align: center;
-    /*background-image: url(img/fon-1.png);*/
-    background-size: cover; 
-    padding-bottom: 30px;
+.item {
+	margin: 64px 110px;
+	min-width: 1000px;
+	height: 350px;
+	position: relative;
+	margin-bottom: 90px;
 }
 
-.features::after {
-    content: "";
-    clear: both;
-    display: table;
+.item-title {
+	font-weight: 500;
+	font-size: 36px;
 }
 
-.tarif-1 {
-    margin-left: 15%;
-    width: 400px;
-    height: 500px;
-    float: left;
-    border-radius: 10px;
-    background-color: rgba(216, 129, 129, 0.548);
-    background-size: cover;
-    transition: all 0.3s;
+.item .container {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.tarif-1:hover {
-    box-shadow: 0px 0px 35px 15px rgba(0, 0, 0, 0.459);
+.item-description {
+	max-width: 515px;
+	margin-top: 50px;
+	font-weight: 400;
+	height: 70%;
 }
 
-.tarif-1 h2:nth-of-type(1) {
-    font-size: 40px;
-    color: #000000;
+.item_price {
+	font-size: 217px;
+	color: #17BE32;
+	transform: translateY(-50px);
 }
 
-.tarif-1 a {
-    color: #000000;
-    text-decoration: underline;
+.item-button {
+	width: 277px;
+	height: 65px;
+	border-radius: 10px;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-130px);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 18px;
+	transition: all 400ms ease-in-out;
+	cursor: pointer;
 }
 
-.tarif-1 p {
-    color: #000000;
-    font-size: 24px;
-    margin-top: -10px;
+.item-button__adaptive {
+	left: 20%;
+	bottom: 90px;
 }
 
-.tarif-1 h2:nth-of-type(2) {
-    font-size: 90px;
-    color: #000000;
+.item-button:hover {
+	padding-top: 18px;
+	background-color: #FFFFFF;
+	color: #000000;
 }
 
-.tarif-2 {
-    margin-right: 15%;
-    width: 400px;
-    height: 500px;
-    float: right;
-    border-radius: 10px;
-    background-color: rgba(216, 129, 129, 0.548);
-    background-size: cover;
-    background-position: top 0px left -170px;
-    transition: all 0.3s;
+.reverse-flex {
+	flex-direction: row-reverse;
 }
 
-.tarif-2:hover {
-    box-shadow: 0px 0px 35px 10px rgba(0,0,0,0.75);
+.item-slider__reverse {
+	margin-left: 0;
+	margin-right: 10%;
 }
 
-.tarif-2 h2:nth-of-type(1) {
-    font-size: 40px;
-    color: #000000;
+.item-title__reverse {
+	float: right;
 }
 
-.tarif-2 a {
-    color: #000000;
-    text-decoration: underline;
+.item-description__reverse {
+	text-align: right;
 }
 
-.tarif-2 p {
-    color: #000000;
-    font-size: 24px;
-    margin-top: -10px;
+.item:nth-of-type(2) .item-slider-img {
+	background-image: url("img/background_ski_1.jpg");
 }
-
-
-.tarif-2 h2:nth-of-type(2) {
-    font-size: 90px;
-    color: #000000;
-}
-
-
 
 /*Подвал*/
 
 footer {
-    height: 100px;
-    width: 100%;
+	height: 100px;
+	width: 100%;
 }
 
-.logo-footer {
-    margin-top: 30px;
-    margin-left: 45px;
+footer .flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
 }
 
 footer a:nth-of-type(2) div {
-    color: #6A6969;
-    font-family: 'Roboto', sans-serif;
-    margin-top: -30px;
-    font-size: 20px;
-    width: 190px;
-}
-
-footer a:nth-of-type(2) {
-    width: 190px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-decoration: underline;
 }
 
 footer .prava p {
-    float: right;
-    margin-right: 3%;
-    color: #6A6969;
-    font-family: 'Roboto', sans-serif;
-    margin-top: -25px;
-    font-size: 15px;
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
 }
 
-/* media-screen*/
+/*медиа запросы*/
 
-@media screen and (max-width: 1200px) {
-    html {
-        width: 1200px;
-    }
-}
-
-/*система на растяжение*/
-
-@media screen and (min-width: 1600px) {
-
-    /*система для шапки на растяжении*/
-
-    .header-frame {
-        width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header nav {
-        position: static;
-        margin-top: 30px;
-        margin-right: 30px;
-        float: right;
-        width: 770px;
-        height: 50px;
-    }
+@media screen and (max-width: 1238px) {
+	html {
+	 width: 1238px;
+	}
 }

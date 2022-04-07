@@ -1,63 +1,88 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
-        <title>Стадион Строитель/тарифы</title>
+        <title>Стадион Строитель/секции</title>
         <link href="style.css" rel="stylesheet">
 
+				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
         <!--Шрифты-->
-        <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Prosto+One&family=Stalinist+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Abril+Fatface&family=Prosto+One&family=Stalinist+One&display=swap" rel="stylesheet">
 
         <meta charset="UTF-8">
-    </head>
-    <body>
+		</head>
 
-        <div class="comment">Сайт загружается.. Подождите немного) Site is loading .. Wait a bit)</div>
+		<body>
+			<!--Шапка-->
+			<header>
+				<img src="../img/logo.svg">
+				<nav>
+						<a href="../index.html">О стадионе</a>
+						<a href="../page-2/index.html">Секции</a>
+						<a href="../page-3/index.html">Прокат</a>
+						<a href="index.html" class="active">Тарифы</a>
+				</nav>
+			</header>
 
-        <!--Шапка-->
-        <!--<header>
-            <div class="header-frame">
-                <img src="../img/logo.svg" class="logo-header">
-                <nav>
-                    <a href="../index.html">О стадионе</a>
-                    <a href="../page-2/index.html">Секции</a>
-                    <a href="../page-3/index.html">Прокат</a>
-                    <button type="button"><a style="margin-right: 0px;" href="index.html">Тарифы</a></button>
-                </nav>
-            </div>
-        </header>-->
+			<div class="title">ТАРИФЫ</div>
 
-        <!--Основоной контент-->
-       <!--<main>
-            <div class="title">
-                <h1>ТАРИФЫ</h1>
-            </div>
-            <div class="features">
-                <div class="tarif-1">
-                    <h2>ВХОДНОЙ БИЛЕТ</h2>
-                    <p>Для входа на каток(стадион)</p>
-                    <h2>50₽</h2>
-                </div>
-                <div class="tarif-2">
-                    <h2>ТОЧКА КОНЬКОВ</h2>
-                    <p>Только одна пара</p>
-                    <h2>70₽</h2>
-                </div>
-            </div>
-        </main>-->
+			<main>
+				<div class="item">
+					<div class="item-title">Входной билет.</div>
+					<div class="container">
+						<div class="item-description">
+							Для входа на каток(стадион) предъявите данный билет кассиру. Если Ваш билет окажется подделкой/мошенническим объектам, то сразу в следующую минуты Вас посадять на 100 лет за кражу и оскарбление чувства верующих, ну и пропаганды нарктических веществ тоже. Этот текст - бесмысленный.
+						</div>
 
-        <!--Подвал-->
-        <!--<footer>
-            <a href="http://stroitel-shel.cf">
-                <img src="../img/logo.svg" class="logo-footer">
-            </a>
-            <a href="http://stroitel-shel.cf">
-                <div>
-                    STROITEL-SHEL.CF
-                </div>
-            </a>
-            <div class="prava">
-                <p>Все права защишены</p>
-            </div>
-        </footer>-->
-    </body>
+						<div class="item_price">
+							50 ₽
+						</div>
+					</div>
+
+					<div class="item-button">
+						ЗАПИСАТЬСЯ
+					</div>
+				</div>
+
+				<!--item 2-->
+				<div class="item">
+					<div class="item-title item-title__reverse">Заточка коньков.</div>
+					<div class="container reverse-flex">
+						<div class="item-description item-description__reverse">
+							Для входа на каток(стадион) предъявите данный билет кассиру. Если Ваш билет окажется подделкой/мошенническим объектам, то сразу в следующую минуты Вас посадять на 100 лет за кражу и оскарбление чувства верующих, ну и пропаганды нарктических веществ тоже. Этот текст - бесмысленный.
+						</div>
+
+						<div class="item_price item_price__reverse">
+							70 ₽
+						</div>
+					</div>
+
+					<div class="item-button">
+						ЗАПИСАТЬСЯ
+					</div>
+				</div>
+
+			</main>
+
+			<!--Подвал-->
+			<footer>
+				<div class="flex">
+						<a href="https://aleshim.github.io/stroitel-shel/">
+								<img src="../img/logo.svg" class="logo-footer">
+						</a>
+						<a href="https://aleshim.github.io/stroitel-shel/">
+								<div>
+										https://aleshim.github.io/stroitel-shel/
+								</div>
+						</a>
+						<div class="prava">
+								<p>Все права защишены</p>
+						</div>
+				</div>
+		</footer>
+		</body>
+
+		<script src="script.js"></script>
 </html>
